@@ -14,7 +14,7 @@ for the game to read a .squiz file as an actual quiz, the file content is split 
 
 |section|what it holds|
 |---|---|
-|configurations|your quiz's configurations as listed in this order:<br>- quiz name (plain text).<br>- answer time limit (non-negative float, all questions).<br>- quiz theme color ("green" or "red").|
+|configurations|your quiz's configurations as listed in this order:<br>- quiz name (plain text).<br>- answer time limit (positive float, all questions).<br>- total questions count (positive integer).<br>- answer order \[random/fixed]<br>- quiz theme color \[green/red/yellow/blue].|
 |questions|questions for your quiz in plain text.each new question is seperated by a new line.<br><br>a line for your question must be in this format:<br>"{question category}\|\|{question content}" (without quotes).|
 |answers|4 answers (A, B, C, D) per question.each tuple of answers is seperated by a new line.<br><br>a tuple of answers must be in this format:<br>"{answer A}&{answer B}&{answer C}&{answer D}&" (without qoutes).<br><br>correct answers must be denoted by a asterisk. for example, if B is correct, write this:<br>"{answer A}&*{answer B}&{answer C}&{answer D}&" (without qoutes).<br><br>there can be multiple correct answers as of v1.3.0.|
 
